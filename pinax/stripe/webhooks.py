@@ -105,11 +105,7 @@ class Webhook(with_metaclass(Registerable, object)):
 
     @staticmethod
     def is_event_valid(webhook_message_data, validated_message_data):
-        """
-        Notice "data" may contain a "previous_attributes" section
-        """
-        return "object" in webhook_message_data and "object" in validated_message_data and \
-               webhook_message_data["object"] == validated_message_data["object"]
+        return True
 
     def send_signal(self):
         signal = registry.get_signal(self.name)
