@@ -27,7 +27,7 @@ def sync_plan(plan, event=None):
         "interval": plan["interval"],
         "interval_count": plan["interval_count"],
         "name": plan["nickname"],
-        "statement_descriptor": plan["statement_descriptor"] or "",
+        "statement_descriptor": "",
         "trial_period_days": plan["trial_period_days"],
         "metadata": plan["metadata"]
     }
