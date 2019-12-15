@@ -293,6 +293,11 @@ class ChargeDisputeUpdatedWebhook(ChargeWebhook):
     name = "charge.dispute.updated"
     description = "Occurs when the dispute is updated (usually with evidence)."
 
+    
+class CheckoutSessionCompletedWebhook(Webhook):
+    name = "checkout.session.completed"
+    description = "When the checkout session is completed"
+
 
 class CouponCreatedWebhook(Webhook):
     name = "coupon.created"
